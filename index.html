@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>shorts-agent — préparation de vidéos courtes</title>
+<meta name="description" content="Outil de production de vidéos courtes qui dépose le montage fini en brouillon dans le compte TikTok de son propre créateur.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a class="brand" href="./">shorts-agent</a>
+  <span class="sp"></span>
+  <a href="./privacy.html">Politique de confidentialité</a>
+  <a href="./terms.html">Conditions d'utilisation</a>
+</nav>
+
+<h1>Préparer une vidéo courte, de l'écriture au montage</h1>
+<p class="lead">shorts-agent est un outil de production vidéo en ligne de commande. Il écrit un script, génère une voix off et des visuels, assemble un montage vertical sous-titré, puis dépose le fichier fini <strong>en brouillon</strong> dans le compte TikTok de la personne qui l'utilise.</p>
+
+<h2>À qui ça s'adresse</h2>
+<p>À un créateur unique qui produit ses propres vidéos et veut automatiser les étapes répétitives — le rendu, le calage des sous-titres, le transfert du fichier — sans déléguer les choix éditoriaux.</p>
+<p>L'outil s'exécute sur l'ordinateur du créateur. Il n'y a pas de service hébergé, pas de compte à créer sur ce site, pas de tableau de bord partagé.</p>
+
+<h2>Comment ça fonctionne</h2>
+<ol class="steps">
+  <li><strong>Écriture.</strong> Le script est rédigé à la main dans un fichier Markdown, ou proposé par l'outil puis relu et corrigé.</li>
+  <li><strong>Vérification.</strong> Les affirmations factuelles du script sont confrontées à des sources indépendantes avant d'aller plus loin.</li>
+  <li><strong>Voix et visuels.</strong> Une voix de synthèse lit le script ; les plans sont calés sur les durées réellement mesurées de chaque section.</li>
+  <li><strong>Montage.</strong> Assemblage vertical 1080×1920, transitions, sous-titres incrustés mot par mot.</li>
+  <li><strong>Contrôle.</strong> Un garde-fou vérifie la durée, l'originalité et la présence des sous-titres. Rien ne sort sans un verdict favorable.</li>
+  <li><strong>Transfert.</strong> Le fichier est envoyé en brouillon dans l'application TikTok du créateur.</li>
+</ol>
+
+<div class="box">
+  <h3>Ce que l'outil ne fait pas</h3>
+  <p>Il <strong>ne publie rien</strong>. Il dépose un brouillon, et le créateur reçoit une notification dans l'application TikTok. C'est lui qui écrit la légende, choisit les hashtags, coche le label « contenu généré par IA » le cas échéant, et décide de publier ou non.</p>
+  <p>L'outil n'accède à aucun compte autre que celui que son utilisateur a lui-même autorisé, ne lit aucune vidéo existante, et ne consulte pas les données d'audience.</p>
+</div>
+
+<h2>Accès demandé à TikTok</h2>
+<p>L'outil demande deux autorisations, et rien de plus :</p>
+<ul>
+  <li><code>user.info.basic</code> — identifier le compte auquel le brouillon doit être envoyé.</li>
+  <li><code>video.upload</code> — déposer une vidéo en brouillon dans ce compte.</li>
+</ul>
+<p>L'autorisation <code>video.publish</code>, qui permettrait de publier directement, <strong>n'est pas demandée</strong>.</p>
+
+<h2>Code source</h2>
+<p>shorts-agent est un projet personnel. L'outil s'exécute localement et n'expose aucun service réseau en dehors des appels aux API qu'il utilise.</p>
+
+<footer>
+  <p>shorts-agent</p>
+  <a href="./privacy.html">Politique de confidentialité</a>
+  <a href="./terms.html">Conditions d'utilisation</a>
+</footer>
+
+</div>
+</body>
+</html>

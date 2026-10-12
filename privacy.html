@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Politique de confidentialité — shorts-agent</title>
+<meta name="description" content="Quelles données shorts-agent manipule, où elles sont stockées, et comment retirer l'accès.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <a class="brand" href="./">shorts-agent</a>
+  <span class="sp"></span>
+  <a href="./">Accueil</a>
+  <a href="./terms.html">Conditions d'utilisation</a>
+</nav>
+
+<h1>Politique de confidentialité</h1>
+<p class="maj">Dernière mise à jour : 12 octobre 2026</p>
+
+<p class="lead">shorts-agent s'exécute sur l'ordinateur de la personne qui l'utilise. Il n'existe aucun serveur, aucune base de données hébergée et aucun compte sur ce site. Tout ce qui suit décrit des données qui restent sur cette machine.</p>
+
+<h2>1. Données traitées</h2>
+<p>Lorsque vous autorisez shorts-agent à accéder à votre compte TikTok, TikTok lui transmet :</p>
+<ul>
+  <li>un <strong>identifiant de compte</strong> (<code>open_id</code>), propre à cette application ;</li>
+  <li>un <strong>jeton d'accès</strong>, valable 24 heures ;</li>
+  <li>un <strong>jeton de renouvellement</strong>, valable 365 jours, qui permet de renouveler le premier sans vous redemander votre autorisation.</li>
+</ul>
+<p>Aucun mot de passe ne transite par l'outil : l'autorisation se fait sur les pages de TikTok, et seuls les jetons résultants lui sont remis.</p>
+
+<h2>2. Usage</h2>
+<p>Ces données servent à une seule opération : déposer un fichier vidéo en brouillon dans votre propre compte TikTok. Elles ne sont utilisées pour rien d'autre.</p>
+<p>L'outil ne lit pas vos vidéos existantes, ne consulte pas vos statistiques d'audience, n'accède à aucun autre compte, et ne publie rien.</p>
+
+<h2>3. Stockage</h2>
+<p>Les jetons sont enregistrés dans un fichier local, <code>data/tiktok_tokens.json</code>, sur l'ordinateur où l'outil s'exécute. Ce fichier est en permissions restreintes et exclu du dépôt de code.</p>
+<p>Ils ne sont transmis à personne. Ils ne quittent la machine que pour être envoyés à TikTok, dans les requêtes que TikTok attend.</p>
+
+<h2>4. Partage</h2>
+<p>Aucune donnée n'est vendue, louée, partagée ni transmise à un tiers. Il n'y a ni régie publicitaire, ni outil de mesure d'audience, ni traceur sur ce site.</p>
+
+<h2>5. Conservation et suppression</h2>
+<p>Les jetons sont conservés tant que vous les gardez. Pour les supprimer, deux moyens, indépendants l'un de l'autre :</p>
+<ul>
+  <li>supprimer le fichier <code>data/tiktok_tokens.json</code> sur votre machine ;</li>
+  <li>révoquer l'accès de l'application depuis les réglages de votre compte TikTok, ce qui invalide les jetons immédiatement, où qu'ils se trouvent.</li>
+</ul>
+<p>Un jeton de renouvellement inutilisé expire de lui-même au bout de 365 jours.</p>
+
+<h2>6. Vidéos transférées</h2>
+<p>Les fichiers vidéo sont produits sur votre machine et envoyés directement à TikTok. Ils ne transitent par aucun serveur intermédiaire et ne sont stockés nulle part ailleurs que chez vous et dans votre compte TikTok.</p>
+
+<h2>7. Services tiers</h2>
+<p>Selon la configuration choisie, l'outil peut appeler des API externes pour générer du texte, une voix ou des images. Ces appels sont faits avec vos propres clés, depuis votre machine, et obéissent aux politiques de confidentialité des fournisseurs concernés.</p>
+
+<h2>8. Mineurs</h2>
+<p>shorts-agent n'est pas destiné aux personnes de moins de 18 ans et ne collecte sciemment aucune donnée les concernant.</p>
+
+<h2>9. Modifications</h2>
+<p>Toute modification de cette politique sera publiée sur cette page, avec une date de mise à jour actualisée.</p>
+
+<h2>10. Contact</h2>
+<p>Pour toute question relative à cette politique, écrire à l'adresse indiquée ci-dessous.</p>
+<div class="box">
+  <p><strong>Contact :</strong> à renseigner avant la mise en ligne.</p>
+</div>
+
+<footer>
+  <p>shorts-agent</p>
+  <a href="./">Accueil</a>
+  <a href="./terms.html">Conditions d'utilisation</a>
+</footer>
+
+</div>
+</body>
+</html>
